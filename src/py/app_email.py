@@ -59,7 +59,7 @@ def parseEmail():
             print(F'regex: {regex[idx]}', flush=True)
             match = re.search(F'{regex[idx]}', fileData)
             if match:
-                resDict[key] = match.group(1)
+                resDict[key] = match.group(1).strip()
 
         response = jsonify(resDict)
         return response
