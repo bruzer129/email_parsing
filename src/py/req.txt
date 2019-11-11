@@ -1,0 +1,4 @@
+Flask
+Flask-Table
+Flask-Bootstrap
+Flask-WTF

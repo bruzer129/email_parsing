@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8"/>
+   <script src='email.js'></script>
+ </head>
+ <body>
+   <h2>Email Parsing Tool</h2>
+   <input type='file' id='fileToRead' />
+   <br>
+   <button id='parseBtn' onclick='readFile()'>Parse File</button>
+   <p>NOTE: File content must be text</p>
+   <table border='1'>
+    <tr><td id='To'>To: </td></tr>
+    <tr><td id='From'>From: </td></tr>
+    <tr><td id='Date'>Date: </td></tr>
+    <tr><td id='Subject'>Subject: </td></tr>
+   </table>
+   <p/><font id='errDiv' color='red' size='+2'></font><p/>
+
+   <p/><label>File Contents</label><br>
+   <textarea id="txtArea" name="emailTxt" style="width:400px;height:400px;"></textarea>
+ </body>
+</html>

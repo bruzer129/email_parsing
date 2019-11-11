@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  flask_email:
+    image: flask_ubu_img
+    ports:
+      - "5000:5000"
+    environment:
+      - FOO=bar
+

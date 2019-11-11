@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+   <meta content="utf-8" http-equiv="encoding">
+   <meta charset="utf-8"/>
+ </head>
+ <body>
+   <h2>Email Parsing Tool</h2>
+   <p>Select a text file with email headers</p>
+   <form action="http://0.0.0.0:5000/parseEmail" method="POST"
+     enctype="multipart/form-data" content="utf-8" http-equiv="encoding">
+     <input type='file' id='fileToRead' name='emailFile' />
+     <input type='submit' value='Parse File' />
+   </form>
+ </body>
+</html>
+
